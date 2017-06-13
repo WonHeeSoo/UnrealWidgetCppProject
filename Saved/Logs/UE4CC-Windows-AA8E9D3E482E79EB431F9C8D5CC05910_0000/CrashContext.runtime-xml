@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<CrashGUID>UE4CC-Windows-AA8E9D3E482E79EB431F9C8D5CC05910_0000</CrashGUID>
+		<ProcessId>2012</ProcessId>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<IsEnsure>true</IsEnsure>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<SecondsSinceStart>1326</SecondsSinceStart>
+		<GameName>UE4-UITest</GameName>
+		<ExecutableName>UE4Editor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>Windows</PlatformName>
+		<PlatformNameIni>Windows</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Dirty</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.15.3-3450819+++UE4+Release-4.15</EngineVersion>
+		<CommandLine>&quot;C:\Users\user\Documents\Unreal Projects\UITest\UITest.uproject&quot;</CommandLine>
+		<LanguageLCID>1042</LanguageLCID>
+		<AppDefaultLocale>ko_KR</AppDefaultLocale>
+		<BuildVersion>++UE4+Release-4.15-CL-3450819</BuildVersion>
+		<IsUE4Release>true</IsUE4Release>
+		<UserName>user</UserName>
+		<BaseDir>C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/</BaseDir>
+		<RootDir>C:/Program Files/Epic Games/UE_4.15/</RootDir>
+		<MachineId>98BC706342570E6BF31B649E70B8EBF8</MachineId>
+		<LoginId>98bc706342570e6bf31b649e70b8ebf8</LoginId>
+		<EpicAccountId>67edd315c19d42acafd85c97de64c8cf</EpicAccountId>
+		<CallStack />
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint>Layout=&quot;WidgetTemplates&quot; Label=&quot;팔레트&quot; Content=SPaletteView</UserActivityHint>
+		<ErrorMessage>Ensure condition failed: false [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\UMG\Private\Components\Widget.cpp] [Line: 861] &nl;You must implement RebuildWidget() in your child class&nl;</ErrorMessage>
+		<CrashDumpMode>0</CrashDumpMode>
+		<CrashReporterMessage />
+		<Misc.NumberOfCores>4</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>4</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+		<Misc.CPUBrand>Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>NVIDIA GeForce GTX 960</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor />
+		<MemoryStats.TotalPhysical>17054662656</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>12376342528</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>140735057608704</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>1059434496</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>1098866688</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>1635368960</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>1636757504</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<TimeOfCrash>636329333339360000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<PlatformFullName>Win64 [Windows 10  64b]</PlatformFullName>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+</FGenericCrashContext>
