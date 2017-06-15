@@ -17,13 +17,14 @@ TSharedRef<SWidget> UMyTestUserWidget::RebuildWidget()
 	TSharedRef<SWidget> FinalWidget = Super::RebuildWidget();
 
 	UPanelWidget* RootWidget = Cast<UPanelWidget>(GetRootWidget());
-	Button1 = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), FName(TEXT("Button1")));
+	Button1 = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), FName(TEXT("Button1TEXT")));
 	RootWidget->AddChild(Button1);
 
 	UCanvasPanelSlot* ButtonSlot = Cast<UCanvasPanelSlot>(Button1->Slot);
 	if (ButtonSlot)
 	{
 		ButtonSlot->SetSize(FVector2D(ButtonSize, ButtonSize));
+
 	}
 	return FinalWidget;
 }

@@ -18,10 +18,10 @@ class UITEST_API UMyTestUserWidget : public UUserWidget
 
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Test")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="BoxSetting")
 	class UButton* Button1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoxSetting")
 	float ButtonSize;
 
 	virtual void NativeConstruct() override;
