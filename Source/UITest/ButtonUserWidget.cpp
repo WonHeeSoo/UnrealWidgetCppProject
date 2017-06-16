@@ -3,13 +3,10 @@
 #include "UITest.h"
 #include "ButtonUserWidget.h"
 
-
 void UButtonUserWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
-
-	
-	//OnClicked.AddDynamic(this, &UButtonUserWidget::ClickEventFunction);
+	ButtonBox->OnClicked.AddDynamic(this, &UButtonUserWidget::ClickEventFunction);
 	// Bind delegates here.
 }
 
@@ -18,38 +15,49 @@ TSharedRef<SWidget> UButtonUserWidget::RebuildWidget()
 	TSharedRef<SWidget> FinalWidget = Super::RebuildWidget();
 
 	UPanelWidget* RootWidget = Cast<UPanelWidget>(GetRootWidget());
-	ButtonBox = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), FName(TEXT("Button1TEXT")));
-	RootWidget->AddChild(ButtonBox);
+	ButtonBox = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), FName(TEXT("ButtonBox")));
+	GridBox = WidgetTree->ConstructWidget<UGridPanel>(UGridPanel::StaticClass(), FName(TEXT("GridBox")));
+	RootWidget->AddChild(GridBox);
+	GridBox->AddChild(ButtonBox);
+	//RootWidget->AddChild(ButtonBox);
 
 	UCanvasPanelSlot* ButtonSlot = Cast<UCanvasPanelSlot>(ButtonBox->Slot);
 	if (ButtonSlot)
 	{
 		ButtonSlot->SetSize(FVector2D(ButtonSizeX, ButtonSizeY));
 		ButtonSlot->SetAnchors(FAnchors(ButtonAnchorX, ButtonAnchorY));
-		//ButtonSlot->SetAlignment
-		//ButtonSlot->SetZOrder()
+		ButtonSlot->SetAlignment(FVector2D(AlignmentX, AlignmentY));
+		ButtonSlot->SetZOrder(ButtonZOrder);
+		ButtonSlot->SetAutoSize(bAutoSize);
+
+		ButtonBox->WidgetStyle.Normal.SetResourceObject(NormalButtonImage);
+		ButtonBox->WidgetStyle.Normal.ImageSize = FVector2D(40.0f,40.0f);
+		ButtonBox->WidgetStyle.Normal.DrawAs = ESlateBrushDrawType::Image;
+		//ButtonBox->WidgetStyle.Normal.TintColor. // FVector4(1.0f, 1.0f, 1.0f, 0.5f);
+		//DrawAsNormal::Image;//Cast<ESlateBrushDrawType>(DrawAsNormal);//ESlateBrushDrawType::Image;
+		//ESlateBrushDrawType::Image;
 		//ButtonSlot->SetAutoSize
 		//ButtonSlot->
 	}
 	return FinalWidget;
 }
 
-void UButtonUserWidget::handleMyButtonClick()
+/*void UButtonUserWidget::handleMyButtonClick()
 {
 	UE_LOG(LogClass, Log, TEXT("HandleClicked"));
 	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Blue, "HandleClicked");
 	//UKismetSystemLibrary::QuitGame(this, nullptr, EQuitPreference::Quit);
 	// implementation of functionality
-}
+}*/
 
-void UButtonUserWidget::Construct_Implementation()
+/*void UButtonUserWidget::Construct_Implementation()
 {
 	//Super::Construct_Implementation();
 	//UButton* InteractionButtton = (UButton*)GetWidgetFromName(TEXT("ButtonWidget"));
 	//InteractionButtton->OnClicked.AddDynamic(this, &UButtonUserWidget::ClickEventFunction);
 	ButtonBox->OnClicked.AddDynamic(this, &UButtonUserWidget::ClickEventFunction);
 	
-}
+}*/
 
 void UButtonUserWidget::ClickEventFunction()
 {

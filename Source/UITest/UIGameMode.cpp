@@ -10,7 +10,7 @@ AUIGameMode::AUIGameMode() : Super()
 	PlayerControllerClass = PlayerPawnClassFinder.Class;
 
 	static ConstructorHelpers::FClassFinder<UUserWidget>
-		MainMenuWidgetClassFinder(TEXT("/Game/StarterContent/ButtonWidget"));
+		MainMenuWidgetClassFinder(TEXT("/Game/StarterContent/TestWidget"));
 	MainMenuWidgetClass = MainMenuWidgetClassFinder.Class;
 }
 
