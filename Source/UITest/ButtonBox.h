@@ -28,6 +28,14 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 		void ClickFunction();
-	
+
 	UButtonBox();
+protected:
+	virtual TSharedRef<SWidget> RebuildWidget() override;
+protected:
+	/** Cached pointer to the underlying slate button owned by this UWidget */
+	TSharedPtr<SButton> MyButtonBox;
+protected:
+	/** Handle the actual click event from slate and forward it on */
+	FReply SlateHandleClicked();
 };

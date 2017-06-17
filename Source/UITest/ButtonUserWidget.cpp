@@ -3,6 +3,12 @@
 #include "UITest.h"
 #include "ButtonUserWidget.h"
 
+void UButtonUserWidget::SynchronizeProperties()
+{
+	Super::SynchronizeProperties();
+	RebuildWidget();
+}
+
 void UButtonUserWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
@@ -16,10 +22,10 @@ TSharedRef<SWidget> UButtonUserWidget::RebuildWidget()
 
 	UPanelWidget* RootWidget = Cast<UPanelWidget>(GetRootWidget());
 	ButtonBox = WidgetTree->ConstructWidget<UButton>(UButton::StaticClass(), FName(TEXT("ButtonBox")));
-	GridBox = WidgetTree->ConstructWidget<UGridPanel>(UGridPanel::StaticClass(), FName(TEXT("GridBox")));
-	RootWidget->AddChild(GridBox);
-	GridBox->AddChild(ButtonBox);
-	//RootWidget->AddChild(ButtonBox);
+//	GridBox = WidgetTree->ConstructWidget<UGridPanel>(UGridPanel::StaticClass(), FName(TEXT("GridBox")));
+//	RootWidget->AddChild(GridBox);
+	//GridBox->AddChild(ButtonBox);
+	RootWidget->AddChild(ButtonBox);
 
 	UCanvasPanelSlot* ButtonSlot = Cast<UCanvasPanelSlot>(ButtonBox->Slot);
 	if (ButtonSlot)
@@ -33,6 +39,19 @@ TSharedRef<SWidget> UButtonUserWidget::RebuildWidget()
 		ButtonBox->WidgetStyle.Normal.SetResourceObject(NormalButtonImage);
 		ButtonBox->WidgetStyle.Normal.ImageSize = FVector2D(40.0f,40.0f);
 		ButtonBox->WidgetStyle.Normal.DrawAs = ESlateBrushDrawType::Image;
+
+		ButtonBox->WidgetStyle.Hovered.SetResourceObject(HoveredButtonImage);
+		ButtonBox->WidgetStyle.Hovered.ImageSize = FVector2D(40.0f, 40.0f);
+		ButtonBox->WidgetStyle.Hovered.DrawAs = ESlateBrushDrawType::Image;
+
+		ButtonBox->WidgetStyle.Pressed.SetResourceObject(PressedButtonImage);
+		ButtonBox->WidgetStyle.Pressed.ImageSize = FVector2D(40.0f, 40.0f);
+		ButtonBox->WidgetStyle.Pressed.DrawAs = ESlateBrushDrawType::Image;
+
+		ButtonBox->WidgetStyle.Disabled.SetResourceObject(DisabledButtonImage);
+		ButtonBox->WidgetStyle.Disabled.ImageSize = FVector2D(40.0f, 40.0f);
+		ButtonBox->WidgetStyle.Disabled.DrawAs = ESlateBrushDrawType::Image;
+
 		//ButtonBox->WidgetStyle.Normal.TintColor. // FVector4(1.0f, 1.0f, 1.0f, 0.5f);
 		//DrawAsNormal::Image;//Cast<ESlateBrushDrawType>(DrawAsNormal);//ESlateBrushDrawType::Image;
 		//ESlateBrushDrawType::Image;

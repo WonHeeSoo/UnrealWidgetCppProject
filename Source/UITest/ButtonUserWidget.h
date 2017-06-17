@@ -27,9 +27,6 @@ public:
 		class UButton* ButtonBox;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ButtonSlotSetting")
-		class UGridPanel* GridBox;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ButtonSlotSetting")
 		float ButtonSizeX;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ButtonSlotSetting")
@@ -68,11 +65,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ButtonStyleSetting")
 		UTexture *DisabledButtonImage;
 
-	
 
 	virtual void NativeConstruct() override;
 
 	virtual TSharedRef<SWidget> RebuildWidget() override;
+
+	virtual void SynchronizeProperties() override;
 	
 	/*UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 		void handleMyButtonClick();*/
