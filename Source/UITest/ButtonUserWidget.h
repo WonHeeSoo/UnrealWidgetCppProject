@@ -72,6 +72,7 @@ public:
 
 	virtual void SynchronizeProperties() override;
 	
+	virtual const FText GetPaletteCategory() override;
 	/*UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 		void handleMyButtonClick();*/
 

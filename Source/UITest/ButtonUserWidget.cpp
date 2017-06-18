@@ -3,6 +3,8 @@
 #include "UITest.h"
 #include "ButtonUserWidget.h"
 
+#define LOCTEXT_NAMESPACE "UMG"
+
 void UButtonUserWidget::SynchronizeProperties()
 {
 	Super::SynchronizeProperties();
@@ -61,6 +63,11 @@ TSharedRef<SWidget> UButtonUserWidget::RebuildWidget()
 	return FinalWidget;
 }
 
+const FText UButtonUserWidget::GetPaletteCategory()
+{
+	return LOCTEXT("", "My Custom Stuff");
+}
+
 /*void UButtonUserWidget::handleMyButtonClick()
 {
 	UE_LOG(LogClass, Log, TEXT("HandleClicked"));
@@ -93,3 +100,5 @@ void UButtonUserWidget::ClickEventFunction()
 	//return FReply(true);
 	return FReply(true);
 }*/
+
+#undef LOCTEXT_NAMESPACE
