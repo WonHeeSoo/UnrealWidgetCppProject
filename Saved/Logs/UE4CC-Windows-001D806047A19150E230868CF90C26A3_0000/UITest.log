@@ -1,0 +1,495 @@
+﻿Log file open, 06/17/17 16:23:56
+LogInit:Display: Running engine for game: UITest
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-497910887) SRandInit(-497910887).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.071745
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  -skipcompile
+LogInit: Base directory: D:/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.17-07.23.57:098][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.17-07.23.57:098][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.17-07.23.57:108][  0]LogInit: Computer: DESKTOP-MDNARJE
+[2017.06.17-07.23.57:108][  0]LogInit: User: wonhs
+[2017.06.17-07.23.57:108][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.06.17-07.23.57:108][  0]LogInit: High frequency timer resolution =2.533210 MHz
+[2017.06.17-07.23.57:108][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2017.06.17-07.23.57:108][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.17-07.23.57:108][  0]LogMemory: Process Physical Memory: 263.75 MB used, 263.75 MB peak
+[2017.06.17-07.23.57:108][  0]LogMemory: Process Virtual Memory: 262.41 MB used, 262.41 MB peak
+[2017.06.17-07.23.57:108][  0]LogMemory: Physical Memory: 8161.20 MB used,  24560.66 MB free, 32721.87 MB total
+[2017.06.17-07.23.57:108][  0]LogMemory: Virtual Memory: 644.83 MB used,  24560.66 MB free, 134217728.00 MB total
+[2017.06.17-07.23.57:305][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+ )
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
+이 노드를 무시합니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+ )
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
+기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
+디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
+루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
+반복하면 1회전 후 0.f 부터 시작됩니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
+반복하면, 1회전 후 0.f 부터 시작됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
+루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
+[2017.06.17-07.23.57:353][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+[2017.06.17-07.23.57:630][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.17-07.23.57:666][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970M' (Feature Level 11_0)
+[2017.06.17-07.23.57:666][  0]LogD3D11RHI:       6106/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.06.17-07.23.57:667][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.17-07.23.57:667][  0]LogD3D11RHI:       0/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.17-07.23.57:667][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.17-07.23.57:673][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.17-07.23.57:673][  0]LogD3D11RHI:     GPU DeviceId: 0x13d8 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.17-07.23.57:673][  0]LogWindows: EnumDisplayDevices:
+[2017.06.17-07.23.57:673][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970M' (P:0 D:1)
+[2017.06.17-07.23.57:673][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970M' (P:1 D:1)
+[2017.06.17-07.23.57:673][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970M' (P:0 D:0)
+[2017.06.17-07.23.57:673][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970M' (P:0 D:0)
+[2017.06.17-07.23.57:673][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.06.17-07.23.57:673][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970M
+[2017.06.17-07.23.57:673][  0]LogD3D11RHI:   Driver Version: 382.33 (internal:22.21.13.8233, unified:382.33)
+[2017.06.17-07.23.57:673][  0]LogD3D11RHI:      Driver Date: 5-17-2017
+[2017.06.17-07.23.57:673][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.17-07.23.57:701][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.17-07.23.57:712][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.17-07.23.57:802][  0]LogShaderCompilers: Guid format shader working directory is 33 characters bigger than the processId version (F:/Dev/UITest/Intermediate/Shaders/WorkingDirectory/5128/).
+[2017.06.17-07.23.57:802][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/wonhs/AppData/Local/Temp/UnrealShaderWorkingDir/635E17DB40BC8208C38D6C9D05314D40/'.
+[2017.06.17-07.23.57:802][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.17-07.23.58:788][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.17-07.23.58:828][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.17-07.23.58:868][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.17-07.23.58:908][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.17-07.23.58:947][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.17-07.23.58:987][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.17-07.23.59:027][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.17-07.23.59:066][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.17-07.23.59:096][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.17-07.23.59:135][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.17-07.23.59:174][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.17-07.23.59:212][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.17-07.23.59:251][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.17-07.23.59:289][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.17-07.23.59:329][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.17-07.23.59:406][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.17-07.23.59:406][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.17-07.23.59:430][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.17-07.23.59:504][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.17-07.23.59:530][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.17-07.23.59:570][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.17-07.23.59:608][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.17-07.23.59:646][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.17-07.23.59:685][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.17-07.23.59:685][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.17-07.23.59:964][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache: Loaded boot cache 0.05s 56MB C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Dev/UITest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Dev/UITest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.17-07.24.00:018][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.17-07.24.00:036][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.17-07.24.00:048][  0]LogDerivedDataCache: Using Local data cache path C:/Users/wonhs/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.17-07.24.00:062][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.17-07.24.00:062][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.17-07.24.00:062][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.17-07.24.00:316][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.17-07.24.00:320][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.17-07.24.00:484][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.17-07.24.00:510][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.17-07.24.00:540][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.17-07.24.00:540][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.17-07.24.00:540][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.17-07.24.00:993][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: uitest, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2034995707
+[2017.06.17-07.24.01:029][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2017.06.17-07.24.01:067][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.021161 seconds
+[2017.06.17-07.24.01:073][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.06.17-07.24.01:073][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.06.17-07.24.01:073][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.17-07.24.01:114][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.17-07.24.02:280][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.17-07.24.02:309][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.17-07.24.02:716][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.17-07.24.02:969][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.17-07.24.02:970][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.17-07.24.02:998][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.17-07.24.03:026][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.17-07.24.03:813][  0]LogEngine: Initializing Engine...
+[2017.06.17-07.24.03:814][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.17-07.24.03:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.17-07.24.03:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.17-07.24.03:994][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.17-07.24.04:032][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.17-07.24.04:080][  0]LogInit: FAudioDevice initialized.
+[2017.06.17-07.24.04:108][  0]LogDerivedDataCache: Saved boot cache 0.03s 56MB C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.17-07.24.04:117][  0]LogInit: Texture streaming: Enabled
+[2017.06.17-07.24.04:178][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.17-07.24.04:178][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={E668225A-4B63-D2F8-4425-EAA8FD566C0B}
+[2017.06.17-07.24.04:238][  0]LogInit: Transaction tracking system initialized
+[2017.06.17-07.24.04:448][  0]BlueprintLog: New page: 에디터 로드
+[2017.06.17-07.24.04:989][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.06.17-07.24.05:409][  0]LogConsoleResponse:Display: 
+[2017.06.17-07.24.05:513][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.17-07.24.05:513][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.17-07.24.06:152][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/' took 0.01s
+[2017.06.17-07.24.06:152][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.17-07.24.06:215][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.06.17-07.24.06:246][  0]LogSlate: Took 0.000161 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.17-07.24.06:249][  0]LogSlate: Took 0.002568 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.06.17-07.24.12:506][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.06.17-07.24.12:511][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.06.17-07.24.12:522][  0]Cmd: MAP LOAD FILE="F:/Dev/UITest/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.17-07.24.12:522][  0]LightingResults: New page: 라이팅 빌드
+[2017.06.17-07.24.12:562][  0]MapCheck: New page: 맵 체크
+[2017.06.17-07.24.12:562][  0]LightingResults: New page: 라이팅 빌드
+[2017.06.17-07.24.12:584][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.17-07.24.12:608][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.17-07.24.12:609][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.17-07.24.12:645][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 36.695ms.
+[2017.06.17-07.24.12:645][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.124
+[2017.06.17-07.24.12:767][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_1ea8_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_28f4_0///####STATCAT_Advanced####
+[2017.06.17-07.24.12:767][  0]LogCollectionManager: Loaded 0 collections in 0.000778 seconds
+[2017.06.17-07.24.12:832][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Saved/Collections/' took 0.01s
+[2017.06.17-07.24.12:832][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/Developers/wonhs/Collections/' took 0.01s
+[2017.06.17-07.24.12:832][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/Collections/' took 0.01s
+[2017.06.17-07.24.12:832][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.06.17-07.24.12:842][  0]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2253 classes and 455 folders.
+[2017.06.17-07.24.12:882][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2017.06.17-07.24.12:913][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.06.17-07.24.12:943][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.06.17-07.24.13:045][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.17-07.24.13:053][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.06.17-07.24.13:104][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.06.17-07.24.13:104][  0]LogLoad: (Engine Initialization) Total time: 17.65 seconds
+[2017.06.17-07.24.13:104][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.04 seconds
+[2017.06.17-07.24.13:104][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.17-07.24.13:104][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.17-07.24.13:124][  0]LogOcInput: OculusInput pre-init called
+[2017.06.17-07.24.13:142][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.17-07.24.13:144][  0]LogSlate: Took 0.000237 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.17-07.24.13:150][  0]LogSlate: Took 0.000250 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.17-07.24.13:305][  0]LogRenderer: Reallocating scene render targets to support 1208x460 NumSamples 1 (Frame:2).
+[2017.06.17-07.24.13:352][  0]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-07.24.13:396][  1]LogAssetRegistry: Asset discovery search completed in 12.3882 seconds
+[2017.06.17-07.24.13:396][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000004 seconds (found 0 objects)
+[2017.06.17-07.24.13:396][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
+[2017.06.17-07.24.14:139][ 44]LogSlate: Took 0.000259 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-07.24.20:871][447]LogSlate: Took 0.000176 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-07.24.21:323][447]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 112 classes and 0 folders.
+[2017.06.17-07.24.21:974][447]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.06.17-07.24.24:799][605]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/TextBlockBox.h'
+[2017.06.17-07.24.24:865][605]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/TextBlockBox.cpp'
+[2017.06.17-07.34.13:954][780]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.037
+[2017.06.17-07.34.13:956][780]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-07.34.13:956][780]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-07.34.13:956][780]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.34.13:998][780]LogSavePackage: Save=35.22ms
+[2017.06.17-07.34.13:998][780]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto13D0AA2004DC4DC39D683BDABC7276D5D.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto1.uasset'
+[2017.06.17-07.34.13:999][780]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto1.uasset
+[2017.06.17-07.34.13:999][780]LogFileHelpers: Auto-saving content packages took 0.044
+[2017.06.17-07.40.39:154][954]LogHotReload: New module detected: UE4Editor-UITest-8372.dll
+[2017.06.17-07.40.40:163][958]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.40.40:276][958]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0013 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.40.40:278][958]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.40.40:591][958]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.40.40:598][958]Display: HotReload took  0.4s.
+[2017.06.17-07.41.03:289][191]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-07.41.09:198][528]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-07.41.37:167][144]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-07.41.45:533][614]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-07.42.00:966][521]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.42.18:567][810]LogHotReload: New module detected: UE4Editor-UITest-1796.dll
+[2017.06.17-07.42.19:245][813]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.42.19:328][813]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.42.19:330][813]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.42.19:588][813]LogContentBrowser: Native class hierarchy populated in 0.0123 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.42.19:594][813]Display: HotReload took  0.3s.
+[2017.06.17-07.42.28:507][268]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.42.43:375][135]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.43.02:123][223]BlueprintLog: New page: CPPWidget 컴파일
+[2017.06.17-07.43.27:137][573]LogHotReload: New module detected: UE4Editor-UITest-8328.dll
+[2017.06.17-07.43.28:148][577]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.43.28:239][577]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0015 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.43.28:244][577]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.43.28:530][577]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.43.28:535][577]Display: HotReload took  0.4s.
+[2017.06.17-07.43.52:036][818]LogVSAccessor:Warning: Couldn't goto line number '1' in 'F:/Dev/UITest/Source/UITest/ButtonUserWidget.h'
+[2017.06.17-07.44.44:046][823]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.039
+[2017.06.17-07.44.44:048][823]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-07.44.44:048][823]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-07.44.44:048][823]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.44.44:088][823]LogSavePackage: Save=34.09ms
+[2017.06.17-07.44.44:088][823]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto221352C6D41D3B96DF7C09885E94FFEB9.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto2.uasset'
+[2017.06.17-07.44.44:089][823]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto2.uasset
+[2017.06.17-07.44.44:089][823]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/ButtonWidget] ([1] browsable assets)...
+[2017.06.17-07.44.44:089][823]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/ButtonWidget]
+[2017.06.17-07.44.44:089][823]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.44.44:101][823]LogSavePackage: Save=6.73ms
+[2017.06.17-07.44.44:101][823]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget_Auto2CD284EBB483E6E4E21278D8C56F9ABDC.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset'
+[2017.06.17-07.44.44:361][823]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset
+[2017.06.17-07.44.44:362][823]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/CPPWidget] ([1] browsable assets)...
+[2017.06.17-07.44.44:362][823]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/CPPWidget]
+[2017.06.17-07.44.44:362][823]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/CPPWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/CPPWidget_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.44.44:390][823]LogSavePackage: Save=14.09ms
+[2017.06.17-07.44.44:390][823]LogSavePackage: Moving 'F:/Dev/UITest/Saved/CPPWidget_Auto24BF51AE546855C79940FC4A236404505.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/CPPWidget_Auto2.uasset'
+[2017.06.17-07.44.44:391][823]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/CPPWidget_Auto2.uasset
+[2017.06.17-07.44.44:391][823]LogFileHelpers: Auto-saving content packages took 0.343
+[2017.06.17-07.46.57:394][422]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/ButtonUserWidget.h'
+[2017.06.17-07.46.57:452][422]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/ButtonUserWidget.cpp'
+[2017.06.17-07.47.00:521][491]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/MyTestUserWidget.h'
+[2017.06.17-07.47.00:691][491]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/MyTestUserWidget.cpp'
+[2017.06.17-07.47.41:321][670]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.47.45:023][880]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.48.04:979][ 59]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.48.15:271][651]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.48.20:468][909]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.49.51:290][329]BlueprintLog: New page: ButtonWidget 컴파일
+[2017.06.17-07.50.07:059][199]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.06.17-07.50.09:329][334]LogBlueprint:Warning: Reparenting blueprint WidgetBlueprint /Game/StarterContent/NewWidgetBlueprint.NewWidgetBlueprint from UserWidget to ButtonUserWidget...
+[2017.06.17-07.50.09:333][334]BlueprintLog: New page: NewWidgetBlueprint 컴파일
+[2017.06.17-07.50.15:066][660]BlueprintLog: New page: NewWidgetBlueprint 컴파일
+[2017.06.17-07.51.32:016][353]LogHotReload: New module detected: UE4Editor-UITest-7198.dll
+[2017.06.17-07.51.33:029][357]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.51.33:111][357]LogClass: Could not find existing class ButtonUserWidget in package /Script/UITest for HotReload, assuming new class
+[2017.06.17-07.51.33:111][357]LogClass: Function ClickEventFunction is new.
+[2017.06.17-07.51.33:125][357]LogHotReload: Re-instancing ButtonUserWidget after hot-reload.
+[2017.06.17-07.51.33:820][357]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.51.33:824][357]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.51.34:097][357]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.51.34:102][357]Display: HotReload took  1.1s.
+[2017.06.17-07.52.00:783][866]LogHotReload: New module detected: UE4Editor-UITest-1887.dll
+[2017.06.17-07.52.01:470][869]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.52.01:607][869]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0014 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.52.01:610][869]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.52.01:904][869]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.52.01:909][869]Display: HotReload took  0.4s.
+[2017.06.17-07.54.33:604][806]BlueprintLog: New page: NewWidgetBlueprint 컴파일
+[2017.06.17-07.54.41:842][267]BlueprintLog: New page: NewWidgetBlueprint 컴파일
+[2017.06.17-07.55.02:966][426]LogHotReload: New module detected: UE4Editor-UITest-3767.dll
+[2017.06.17-07.55.03:656][429]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.55.03:768][429]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.55.03:772][429]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.55.04:114][429]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.55.04:119][429]Display: HotReload took  0.5s.
+[2017.06.17-07.55.09:249][444]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.067
+[2017.06.17-07.55.09:250][444]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-07.55.09:250][444]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-07.55.09:250][444]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.55.09:318][444]LogSavePackage: Save=61.47ms
+[2017.06.17-07.55.09:318][444]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto3D86C8D754A02D5276D918FBC4031CB94.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto3.uasset'
+[2017.06.17-07.55.09:319][444]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto3.uasset
+[2017.06.17-07.55.09:319][444]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/ButtonWidget] ([1] browsable assets)...
+[2017.06.17-07.55.09:319][444]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/ButtonWidget]
+[2017.06.17-07.55.09:319][444]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.55.09:333][444]LogSavePackage: Save=7.48ms
+[2017.06.17-07.55.09:333][444]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget_Auto3F9C215924252AF7A960259B43267652A.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset'
+[2017.06.17-07.55.09:333][444]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset
+[2017.06.17-07.55.09:334][444]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/NewWidgetBlueprint] ([1] browsable assets)...
+[2017.06.17-07.55.09:334][444]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/NewWidgetBlueprint]
+[2017.06.17-07.55.09:334][444]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/NewWidgetBlueprint" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/NewWidgetBlueprint_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-07.55.09:343][444]LogSavePackage: Save=8.61ms
+[2017.06.17-07.55.09:343][444]LogSavePackage: Moving 'F:/Dev/UITest/Saved/NewWidgetBlueprint_Auto38A310AAE451F5B6D75A88BA498D4046B.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/NewWidgetBlueprint_Auto3.uasset'
+[2017.06.17-07.55.09:344][444]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/NewWidgetBlueprint_Auto3.uasset
+[2017.06.17-07.55.09:344][444]LogFileHelpers: Auto-saving content packages took 0.094
+[2017.06.17-07.55.16:461][466]LogHotReload: New module detected: UE4Editor-UITest-2810.dll
+[2017.06.17-07.55.17:154][469]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-07.55.17:297][469]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0015 seconds. Added 8 classes and 2 folders.
+[2017.06.17-07.55.17:300][469]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-07.55.17:595][469]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-07.55.17:600][469]Display: HotReload took  0.4s.
+[2017.06.17-08.05.10:503][108]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.066
+[2017.06.17-08.05.10:504][108]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-08.05.10:504][108]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-08.05.10:505][108]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-08.05.10:549][108]LogSavePackage: Save=36.07ms
+[2017.06.17-08.05.10:549][108]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto4DAD824F6420D0EE80C9E2D954544CBDA.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset'
+[2017.06.17-08.05.10:549][108]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset
+[2017.06.17-08.05.10:549][108]LogFileHelpers: Auto-saving content packages took 0.046
+[2017.06.17-08.18.06:063][235]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-08.20.54:554][947]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.047
+[2017.06.17-08.20.54:555][947]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-08.20.54:555][947]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-08.20.54:555][947]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-08.20.54:898][947]LogSavePackage: Save=337.78ms
+[2017.06.17-08.20.54:898][947]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto51CDA34AC43197C107A6393B50C086CB5.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset'
+[2017.06.17-08.20.54:899][947]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset
+[2017.06.17-08.20.54:899][947]LogFileHelpers: Auto-saving content packages took 0.345
+[2017.06.17-08.27.45:637][221]LogHotReload: New module detected: UE4Editor-UITest-235.dll
+[2017.06.17-08.27.46:646][225]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-08.27.46:767][225]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0013 seconds. Added 8 classes and 2 folders.
+[2017.06.17-08.27.46:771][225]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-08.27.47:042][225]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2255 classes and 459 folders.
+[2017.06.17-08.27.47:049][225]Display: HotReload took  0.4s.
+[2017.06.17-08.31.12:784][129]Running D:/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe UITest Win64 Development -editorrecompile "F:/Dev/UITest/UITest.uproject" -invalidatemakefilesonly
+[2017.06.17-08.31.13:087][129]Invalidating makefiles only in this run.
+[2017.06.17-08.31.13:205][129]Recompiling UITest...
+[2017.06.17-08.31.13:205][129]Launching UnrealBuildTool... [D:/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe UITest -ModuleWithSuffix UITest 2142 Win64 Development -editorrecompile -canskiplink "F:/Dev/UITest/UITest.uproject" ]
+[2017.06.17-08.31.14:011][129]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: New page: 컴파일 - 2017. 6. 18. 오전 2:31:22
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 Parsing headers for UITestEditor
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보   Running UnrealHeaderTool "F:\Dev\UITest\UITest.uproject" "F:\Dev\UITest\Intermediate\Build\Win64\UITestEditor\Development\UITestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 Reflection code generated for UITestEditor in 3.592815 seconds
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 Performing 4 actions (4 in parallel)
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 UniformGridPanelBoxUserWidget.cpp
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 UITest.generated.cpp
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 [3/4] Link UE4Editor-UITest-2142.dll
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 [4/4] Link UE4Editor-UITest-2142.lib
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보    F:\Dev\UITest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UITest-2142.lib ???̺귯?? ?? F:\Dev\UITest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UITest-2142.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보    F:\Dev\UITest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UITest-2142.suppressed.lib ???̺귯?? ?? F:\Dev\UITest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UITest-2142.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.06.17-08.31.22:060][129]CompilerResultsLog: 정보 Total build time: 8.60 seconds (Local executor: 3.05 seconds)
+[2017.06.17-08.31.22:060][129]LogMainFrame: MainFrame: Module compiling took 8.861 seconds
+[2017.06.17-08.31.22:175][129]LogClass: Could not find existing class UniformGridPanelBoxUserWidget in package /Script/UITest for HotReload, assuming new class
+[2017.06.17-08.31.22:180][129]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 9 classes and 2 folders.
+[2017.06.17-08.31.22:184][129]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-08.31.22:474][129]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2256 classes and 459 folders.
+[2017.06.17-08.31.22:474][129]Display: HotReload took  9.3s.
+[2017.06.17-08.31.22:475][129]Warning: HotReload operation took  9.3s.
+[2017.06.17-08.31.22:618][129]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/UniformGridPanelBoxUserWidget.h'
+[2017.06.17-08.31.22:688][129]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/Dev/UITest/Source/UITest/UniformGridPanelBoxUserWidget.cpp'
+[2017.06.17-08.31.22:700][129]LogHotReload: New module detected: UE4Editor-UITest-2142.dll
+[2017.06.17-08.31.22:749][130]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-08.31.22:891][130]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 9 classes and 2 folders.
+[2017.06.17-08.31.22:896][130]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.06.17-08.31.23:140][130]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2256 classes and 459 folders.
+[2017.06.17-08.31.23:145][130]Display: HotReload took  0.4s.
+[2017.06.17-08.32.26:777][432]LogHotReload: New module detected: UE4Editor-UITest-8419.dll
+[2017.06.17-08.32.27:813][436]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-08.32.27:966][436]LogClass: Could not find existing class UniformGridPanelBoxUserWidget in package /Script/UITest for HotReload, assuming new class
+[2017.06.17-08.32.27:973][436]LogHotReload: Re-instancing UniformGridPanelBoxUserWidget after hot-reload.
+[2017.06.17-08.32.28:103][436]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 9 classes and 2 folders.
+[2017.06.17-08.32.28:108][436]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-08.32.28:379][436]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2256 classes and 459 folders.
+[2017.06.17-08.32.28:386][436]Display: HotReload took  0.6s.
+[2017.06.17-09.00.08:405][416]LogHotReload: New module detected: UE4Editor-UITest-9376.dll
+[2017.06.17-09.00.09:081][419]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-09.00.09:237][419]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0013 seconds. Added 9 classes and 2 folders.
+[2017.06.17-09.00.09:242][419]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-09.00.09:571][419]LogContentBrowser: Native class hierarchy populated in 0.0116 seconds. Added 2256 classes and 459 folders.
+[2017.06.17-09.00.09:578][419]Display: HotReload took  0.5s.
+[2017.06.17-09.00.31:587][424]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.06.17-09.00.33:875][560]LogBlueprint:Warning: Reparenting blueprint WidgetBlueprint /Game/StarterContent/UniformCustomWidget.UniformCustomWidget from UserWidget to UniformGridPanelBoxUserWidget...
+[2017.06.17-09.00.33:878][560]BlueprintLog: New page: UniformCustomWidget 컴파일
+[2017.06.17-09.01.12:733][815]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.17-09.03.09:440][ 98]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.043
+[2017.06.17-09.03.09:442][ 98]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.17-09.03.09:442][ 98]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.17-09.03.09:442][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-09.03.09:485][ 98]LogSavePackage: Save=36.76ms
+[2017.06.17-09.03.09:485][ 98]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto6A2116F094FB22C44A9878EBA4C98E83D.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset'
+[2017.06.17-09.03.09:486][ 98]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset
+[2017.06.17-09.03.09:486][ 98]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/UniformCustomWidget] ([1] browsable assets)...
+[2017.06.17-09.03.09:486][ 98]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/UniformCustomWidget]
+[2017.06.17-09.03.09:486][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/UniformCustomWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/UniformCustomWidget_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2017.06.17-09.03.09:493][ 98]LogSavePackage: Save=6.62ms
+[2017.06.17-09.03.09:493][ 98]LogSavePackage: Moving 'F:/Dev/UITest/Saved/UniformCustomWidget_Auto6659783884D5AA02EA2F0F3B4D13B11C8.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/UniformCustomWidget_Auto6.uasset'
+[2017.06.17-09.03.09:494][ 98]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/UniformCustomWidget_Auto6.uasset
+[2017.06.17-09.03.09:494][ 98]LogFileHelpers: Auto-saving content packages took 0.053
+[2017.06.17-09.04.04:837][311]LogHotReload: New module detected: UE4Editor-UITest-3852.dll
+[2017.06.17-09.04.05:522][314]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.17-09.04.05:637][314]LogClass: Could not find existing class UniformGridPanelBoxUserWidget in package /Script/UITest for HotReload, assuming new class
+[2017.06.17-09.04.05:647][314]LogHotReload: Re-instancing UniformGridPanelBoxUserWidget after hot-reload.
+[2017.06.17-09.04.06:246][314]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 9 classes and 2 folders.
+[2017.06.17-09.04.06:251][314]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.17-09.04.06:563][314]LogContentBrowser: Native class hierarchy populated in 0.0111 seconds. Added 2256 classes and 459 folders.
+[2017.06.17-09.04.06:568][314]Display: HotReload took  1.0s.

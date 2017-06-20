@@ -1,0 +1,957 @@
+﻿Log file open, 06/19/17 03:35:54
+LogInit:Display: Running engine for game: UITest
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1594946810) SRandInit(-1594946810).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.070663
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  -skipcompile
+LogInit: Base directory: D:/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.18-18.35.54:955][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.18-18.35.54:955][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.18-18.35.54:964][  0]LogInit: Computer: DESKTOP-MDNARJE
+[2017.06.18-18.35.54:964][  0]LogInit: User: wonhs
+[2017.06.18-18.35.54:964][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.06.18-18.35.54:964][  0]LogInit: High frequency timer resolution =2.533210 MHz
+[2017.06.18-18.35.54:965][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2017.06.18-18.35.54:965][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.18-18.35.54:965][  0]LogMemory: Process Physical Memory: 263.86 MB used, 263.86 MB peak
+[2017.06.18-18.35.54:965][  0]LogMemory: Process Virtual Memory: 262.57 MB used, 262.57 MB peak
+[2017.06.18-18.35.54:965][  0]LogMemory: Physical Memory: 6801.20 MB used,  25920.67 MB free, 32721.87 MB total
+[2017.06.18-18.35.54:965][  0]LogMemory: Virtual Memory: 644.83 MB used,  25920.67 MB free, 134217728.00 MB total
+[2017.06.18-18.35.55:154][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+ )
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
+이 노드를 무시합니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+ )
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
+기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
+디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
+루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
+반복하면 1회전 후 0.f 부터 시작됩니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+[2017.06.18-18.35.55:198][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
+[2017.06.18-18.35.55:199][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
+[2017.06.18-18.35.55:199][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
+[2017.06.18-18.35.55:199][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
+[2017.06.18-18.35.55:199][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
+반복하면, 1회전 후 0.f 부터 시작됩니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
+루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
+[2017.06.18-18.35.55:199][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+Localization Resource: (D:/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+[2017.06.18-18.35.55:459][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.18-18.35.55:497][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970M' (Feature Level 11_0)
+[2017.06.18-18.35.55:497][  0]LogD3D11RHI:       6106/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.06.18-18.35.55:498][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.18-18.35.55:498][  0]LogD3D11RHI:       0/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.18-18.35.55:499][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.18-18.35.55:504][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.18-18.35.55:504][  0]LogD3D11RHI:     GPU DeviceId: 0x13d8 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.18-18.35.55:504][  0]LogWindows: EnumDisplayDevices:
+[2017.06.18-18.35.55:504][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970M' (P:0 D:1)
+[2017.06.18-18.35.55:504][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970M' (P:1 D:1)
+[2017.06.18-18.35.55:504][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970M' (P:0 D:0)
+[2017.06.18-18.35.55:504][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970M' (P:0 D:0)
+[2017.06.18-18.35.55:504][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.06.18-18.35.55:504][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970M
+[2017.06.18-18.35.55:504][  0]LogD3D11RHI:   Driver Version: 382.33 (internal:22.21.13.8233, unified:382.33)
+[2017.06.18-18.35.55:505][  0]LogD3D11RHI:      Driver Date: 5-17-2017
+[2017.06.18-18.35.55:505][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.18-18.35.55:531][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.18-18.35.55:542][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.18-18.35.55:638][  0]LogShaderCompilers: Guid format shader working directory is 33 characters bigger than the processId version (F:/Dev/UITest/Intermediate/Shaders/WorkingDirectory/8108/).
+[2017.06.18-18.35.55:639][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/wonhs/AppData/Local/Temp/UnrealShaderWorkingDir/5E649BD84FEB5ED20588BDAA3526994B/'.
+[2017.06.18-18.35.55:639][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.18-18.35.56:604][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.18-18.35.56:642][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.18-18.35.56:680][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.18-18.35.56:717][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.18-18.35.56:756][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.18-18.35.56:793][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.18-18.35.56:832][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.18-18.35.56:869][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.18-18.35.56:898][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.18-18.35.56:935][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.18-18.35.56:973][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.18-18.35.57:010][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.18-18.35.57:048][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.18-18.35.57:085][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.18-18.35.57:122][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.18-18.35.57:196][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.18-18.35.57:196][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.18-18.35.57:220][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.18-18.35.57:291][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.18-18.35.57:336][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.18-18.35.57:374][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.18-18.35.57:411][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.18-18.35.57:448][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.18-18.35.57:487][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.18-18.35.57:487][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.18-18.35.57:755][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache: Loaded boot cache 0.05s 55MB C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Dev/UITest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Dev/UITest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.18-18.35.57:805][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.18-18.35.57:839][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.18-18.35.57:850][  0]LogDerivedDataCache: Using Local data cache path C:/Users/wonhs/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.18-18.35.57:859][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.18-18.35.57:859][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.18-18.35.57:859][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.18-18.35.58:121][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.18-18.35.58:124][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.18-18.35.58:299][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.18-18.35.58:326][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.18-18.35.58:354][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.18-18.35.58:354][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.18-18.35.58:354][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.18-18.35.58:778][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: uitest, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2034995707
+[2017.06.18-18.35.58:816][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.06.18-18.35.58:847][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.018696 seconds
+[2017.06.18-18.35.58:852][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.06.18-18.35.58:852][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.06.18-18.35.58:852][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.18-18.35.58:891][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.18-18.36.00:039][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.18-18.36.00:068][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.18-18.36.00:472][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.18-18.36.00:717][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.18-18.36.00:718][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.18-18.36.00:746][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.18-18.36.00:773][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.18-18.36.01:537][  0]LogEngine: Initializing Engine...
+[2017.06.18-18.36.01:537][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.18-18.36.01:634][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.18-18.36.01:634][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.18-18.36.01:710][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.18-18.36.01:744][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-18.36.01:922][  0]LogInit: FAudioDevice initialized.
+[2017.06.18-18.36.01:960][  0]LogDerivedDataCache: Saved boot cache 0.04s 55MB C:/Users/wonhs/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.18-18.36.01:969][  0]LogInit: Texture streaming: Enabled
+[2017.06.18-18.36.02:027][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.18-18.36.02:083][  0]LogInit: Transaction tracking system initialized
+[2017.06.18-18.36.02:295][  0]BlueprintLog: New page: 에디터 로드
+[2017.06.18-18.36.02:856][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.06.18-18.36.03:379][  0]LogConsoleResponse:Display: 
+[2017.06.18-18.36.03:477][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.18-18.36.03:477][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.18-18.36.04:098][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/' took 0.01s
+[2017.06.18-18.36.04:098][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.06.18-18.36.04:098][  0]Cmd: MAP LOAD FILE="F:/Dev/UITest/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.18-18.36.04:098][  0]LightingResults: New page: 라이팅 빌드
+[2017.06.18-18.36.04:123][  0]MapCheck: New page: 맵 체크
+[2017.06.18-18.36.04:123][  0]LightingResults: New page: 라이팅 빌드
+[2017.06.18-18.36.04:145][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-18.36.04:164][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.18-18.36.04:165][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.18-18.36.04:193][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 27.696ms.
+[2017.06.18-18.36.04:193][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.095
+[2017.06.18-18.36.04:303][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.06.18-18.36.04:430][  0]LogCollectionManager: Loaded 0 collections in 0.000693 seconds
+[2017.06.18-18.36.04:527][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Saved/Collections/' took 0.01s
+[2017.06.18-18.36.04:527][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/Developers/wonhs/Collections/' took 0.01s
+[2017.06.18-18.36.04:527][  0]LogFileCache: Scanning file cache for directory 'F:/Dev/UITest/Content/Collections/' took 0.01s
+[2017.06.18-18.36.04:527][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.06.18-18.36.04:537][  0]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2255 classes and 455 folders.
+[2017.06.18-18.36.04:577][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.06.18-18.36.04:607][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2017.06.18-18.36.04:636][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2017.06.18-18.36.04:734][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.18-18.36.04:741][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.06.18-18.36.04:791][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.06.18-18.36.04:791][  0]LogLoad: (Engine Initialization) Total time: 11.45 seconds
+[2017.06.18-18.36.04:791][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.04 seconds
+[2017.06.18-18.36.04:791][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.18-18.36.04:791][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.18-18.36.04:813][  0]LogOcInput: OculusInput pre-init called
+[2017.06.18-18.36.04:832][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.18-18.36.04:833][  0]LogSlate: Took 0.000270 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.18-18.36.04:838][  0]LogSlate: Took 0.002744 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.06.18-18.36.04:839][  0]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.18-18.36.04:845][  0]LogSlate: Took 0.000181 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.18-18.36.04:962][  0]LogRenderer: Reallocating scene render targets to support 1208x460 NumSamples 1 (Frame:2).
+[2017.06.18-18.36.04:995][  0]LogSlate: Took 0.000218 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-18.36.05:088][  1]LogAssetRegistry: Asset discovery search completed in 6.2945 seconds
+[2017.06.18-18.36.05:088][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000004 seconds (found 0 objects)
+[2017.06.18-18.36.05:088][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
+[2017.06.18-18.36.23:195][566]LogSlate: Took 0.000229 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-18.36.23:641][566]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0014 seconds. Added 112 classes and 0 folders.
+[2017.06.18-18.36.24:258][566]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-18.36.24:259][566]LogSlate: Took 0.000179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.06.18-18.40.36:114][276]LogHotReload: New module detected: UE4Editor-UITest-7415.dll
+[2017.06.18-18.40.37:141][280]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.40.37:266][280]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0027 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.40.37:269][280]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.40.37:610][280]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.40.37:617][280]Display: HotReload took  0.5s.
+[2017.06.18-18.43.24:626][781]LogHotReload: New module detected: UE4Editor-UITest-2214.dll
+[2017.06.18-18.43.25:656][785]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.43.25:797][785]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0011 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.43.25:799][785]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.43.26:066][785]LogContentBrowser: Native class hierarchy populated in 0.0235 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.43.26:075][785]Display: HotReload took  0.4s.
+[2017.06.18-18.44.57:751][ 60]LogHotReload: New module detected: UE4Editor-UITest-1894.dll
+[2017.06.18-18.44.58:777][ 64]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.44.58:919][ 64]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0027 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.44.58:923][ 64]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.44.59:190][ 64]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.44.59:196][ 64]Display: HotReload took  0.4s.
+[2017.06.18-18.46.07:352][268]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.068
+[2017.06.18-18.46.07:353][268]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/ButtonWidget] ([1] browsable assets)...
+[2017.06.18-18.46.07:353][268]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/ButtonWidget]
+[2017.06.18-18.46.07:353][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-18.46.07:368][268]LogSavePackage: Save=8.09ms
+[2017.06.18-18.46.07:369][268]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget_Auto1B9A3A40D49DD5846EAE6C6BAA5C085FF.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto1.uasset'
+[2017.06.18-18.46.07:369][268]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto1.uasset
+[2017.06.18-18.46.07:369][268]LogFileHelpers: Auto-saving content packages took 0.016
+[2017.06.18-18.48.26:205][685]LogHotReload: New module detected: UE4Editor-UITest-4260.dll
+[2017.06.18-18.48.26:886][688]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.48.26:983][688]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.48.26:986][688]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.48.27:255][688]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.48.27:261][688]Display: HotReload took  0.4s.
+[2017.06.18-18.58.43:289][ 66]LogHotReload: New module detected: UE4Editor-UITest-3316.dll
+[2017.06.18-18.58.44:308][ 70]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.58.44:454][ 70]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0027 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.58.44:458][ 70]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.58.44:712][ 70]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.58.44:719][ 70]Display: HotReload took  0.4s.
+[2017.06.18-18.59.56:726][286]LogHotReload: New module detected: UE4Editor-UITest-3813.dll
+[2017.06.18-18.59.57:404][289]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-18.59.57:581][289]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0023 seconds. Added 10 classes and 2 folders.
+[2017.06.18-18.59.57:584][289]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-18.59.57:859][289]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-18.59.57:865][289]Display: HotReload took  0.5s.
+[2017.06.18-19.04.54:897][388]LogHotReload: New module detected: UE4Editor-UITest-9995.dll
+[2017.06.18-19.04.55:593][391]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.04.55:739][391]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0014 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.04.55:741][391]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.04.56:010][391]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.04.56:017][391]Display: HotReload took  0.4s.
+[2017.06.18-19.06.35:692][690]LogHotReload: New module detected: UE4Editor-UITest-6533.dll
+[2017.06.18-19.06.36:702][694]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.06.36:865][694]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.06.36:868][694]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.06.37:149][694]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.06.37:155][694]Display: HotReload took  0.5s.
+[2017.06.18-19.08.01:829][948]LogHotReload: New module detected: UE4Editor-UITest-5699.dll
+[2017.06.18-19.08.02:841][952]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.08.02:996][952]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.08.02:999][952]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.08.03:248][952]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.08.03:255][952]Display: HotReload took  0.4s.
+[2017.06.18-19.09.25:262][198]LogHotReload: New module detected: UE4Editor-UITest-6945.dll
+[2017.06.18-19.09.26:272][202]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.09.26:393][202]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0017 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.09.26:396][202]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.09.26:665][202]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.09.26:670][202]Display: HotReload took  0.4s.
+[2017.06.18-19.13.41:719][382]LogHotReload: New module detected: UE4Editor-UITest-9831.dll
+[2017.06.18-19.13.42:751][386]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.13.42:898][386]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.13.42:901][386]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.13.43:167][386]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.13.43:182][386]Display: HotReload took  0.4s.
+[2017.06.18-19.19.22:862][405]LogHotReload: New module detected: UE4Editor-UITest-5916.dll
+[2017.06.18-19.19.23:538][408]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.19.23:663][408]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.19.23:665][408]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.19.23:932][408]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.19.23:938][408]Display: HotReload took  0.4s.
+[2017.06.18-19.22.25:614][953]LogHotReload: New module detected: UE4Editor-UITest-7626.dll
+[2017.06.18-19.22.26:291][956]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.22.26:428][956]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0013 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.22.26:431][956]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.22.26:690][956]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.22.26:697][956]Display: HotReload took  0.4s.
+[2017.06.18-19.25.34:340][683]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.062
+[2017.06.18-19.25.34:341][683]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/ButtonWidget] ([1] browsable assets)...
+[2017.06.18-19.25.34:341][683]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/ButtonWidget]
+[2017.06.18-19.25.34:341][683]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-19.25.34:369][683]LogSavePackage: Save=18.04ms
+[2017.06.18-19.25.34:369][683]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget_Auto29CAFEF034EEC46313EEAA6B2E739D918.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset'
+[2017.06.18-19.25.34:370][683]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto2.uasset
+[2017.06.18-19.25.34:370][683]LogFileHelpers: Auto-saving content packages took 0.030
+[2017.06.18-19.31.14:682][435]LogHotReload: New module detected: UE4Editor-UITest-3135.dll
+[2017.06.18-19.31.15:384][438]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.31.15:505][438]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0014 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.31.15:507][438]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.31.15:786][438]LogContentBrowser: Native class hierarchy populated in 0.0111 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.31.15:792][438]Display: HotReload took  0.4s.
+[2017.06.18-19.33.14:717][993]LogHotReload: New module detected: UE4Editor-UITest-122.dll
+[2017.06.18-19.33.15:751][997]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.33.15:928][997]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0016 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.33.15:931][997]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.33.16:182][997]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.33.16:189][997]Display: HotReload took  0.4s.
+[2017.06.18-19.34.19:603][483]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.34.19:625][483]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.34.19:625][483]BlueprintLog: New page: 플레이 전 자동 컴파일
+[2017.06.18-19.34.19:625][483]LogPlayLevel: [PlayLevel] Compiling ButtonWidget before play...
+[2017.06.18-19.34.19:903][483]LogPlayLevel: PlayLevel: Blueprint regeneration took 277 ms (1 blueprints)
+[2017.06.18-19.34.19:903][483]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:34:19)
+[2017.06.18-19.34.19:903][483]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.34.19:904][483]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000851s)
+[2017.06.18-19.34.19:904][483]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.34.19:904][483]LogPlayLevel: PIE: World Init took: (0.000603s)
+[2017.06.18-19.34.19:905][483]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001639s)
+[2017.06.18-19.34.19:967][483]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.34.20:010][483]LogInit: FAudioDevice initialized.
+[2017.06.18-19.34.20:070][483]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.34.20:071][483]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.34.20
+[2017.06.18-19.34.20:071][483]LogWorld: Bringing up level for play took: 0.000738
+[2017.06.18-19.34.20:072][483]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.34.20:103][483]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0011 seconds. Added 11 classes and 0 folders.
+[2017.06.18-19.34.20:103][483]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.34.20:103][483]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.34.20:103][483]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.34.20:109][483]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.34.20:110][483]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.112
+[2017.06.18-19.34.20:111][483]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.34.20:167][483]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:7).
+[2017.06.18-19.34.32:388][207]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.34.32:433][207]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.35.48:359][742]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.018
+[2017.06.18-19.35.48:360][742]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/ButtonWidget] ([1] browsable assets)...
+[2017.06.18-19.35.48:360][742]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/ButtonWidget]
+[2017.06.18-19.35.48:360][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-19.35.48:377][742]LogSavePackage: Save=9.73ms
+[2017.06.18-19.35.48:378][742]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget_Auto33FBC7B384BD8D4E0651B3594D620E49D.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset'
+[2017.06.18-19.35.48:378][742]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/ButtonWidget_Auto3.uasset
+[2017.06.18-19.35.48:378][742]LogFileHelpers: Auto-saving content packages took 0.019
+[2017.06.18-19.38.57:406][879]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.38.57:436][879]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.38.57:436][879]BlueprintLog: New page: 플레이 전 자동 컴파일
+[2017.06.18-19.38.57:436][879]LogPlayLevel: [PlayLevel] Compiling TestWidget before play...
+[2017.06.18-19.38.57:598][879]LogPlayLevel: PlayLevel: Blueprint regeneration took 162 ms (1 blueprints)
+[2017.06.18-19.38.57:598][879]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:38:57)
+[2017.06.18-19.38.57:598][879]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.38.57:599][879]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000826s)
+[2017.06.18-19.38.57:600][879]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.38.57:600][879]LogPlayLevel: PIE: World Init took: (0.000693s)
+[2017.06.18-19.38.57:600][879]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001679s)
+[2017.06.18-19.38.57:650][879]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.38.57:702][879]LogInit: FAudioDevice initialized.
+[2017.06.18-19.38.57:769][879]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.38.57:772][879]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.38.57
+[2017.06.18-19.38.57:772][879]LogWorld: Bringing up level for play took: 0.001585
+[2017.06.18-19.38.57:773][879]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.38.57:774][879]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.38.57:774][879]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.38.57:774][879]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.38.57:787][879]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.38.57:790][879]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.433
+[2017.06.18-19.38.57:791][879]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.00:544][ 21]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.00:576][ 21]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.17:101][994]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.39.18:769][ 60]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.39.18:791][ 60]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.18:791][ 60]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.39.18:791][ 60]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:39:18)
+[2017.06.18-19.39.18:792][ 60]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.39.18:792][ 60]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000783s)
+[2017.06.18-19.39.18:793][ 60]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.39.18:793][ 60]LogPlayLevel: PIE: World Init took: (0.000570s)
+[2017.06.18-19.39.18:793][ 60]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001524s)
+[2017.06.18-19.39.18:842][ 60]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.39.18:885][ 60]LogInit: FAudioDevice initialized.
+[2017.06.18-19.39.18:931][ 60]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.39.18:934][ 60]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.39.18
+[2017.06.18-19.39.18:935][ 60]LogWorld: Bringing up level for play took: 0.001596
+[2017.06.18-19.39.18:935][ 60]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.39.18:936][ 60]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.39.18:936][ 60]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.39.18:936][ 60]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.39.18:949][ 60]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.39.18:953][ 60]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: 0.731
+[2017.06.18-19.39.18:954][ 60]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.23:109][287]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.39.23:136][287]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.45.56:552][685]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.045
+[2017.06.18-19.45.56:554][685]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.18-19.45.56:554][685]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.18-19.45.56:554][685]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-19.45.56:595][685]LogSavePackage: Save=34.74ms
+[2017.06.18-19.45.56:595][685]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto4F3024ABF4D427DD8E236858B1D87422D.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset'
+[2017.06.18-19.45.56:596][685]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto4.uasset
+[2017.06.18-19.45.56:596][685]LogFileHelpers: Auto-saving content packages took 0.042
+[2017.06.18-19.47.56:370][124]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.47.57:863][157]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.47.57:885][157]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.47.57:885][157]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.47.57:885][157]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:47:57)
+[2017.06.18-19.47.57:885][157]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.47.57:886][157]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000842s)
+[2017.06.18-19.47.57:886][157]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.47.57:886][157]LogPlayLevel: PIE: World Init took: (0.000685s)
+[2017.06.18-19.47.57:887][157]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001697s)
+[2017.06.18-19.47.57:936][157]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.47.57:979][157]LogInit: FAudioDevice initialized.
+[2017.06.18-19.47.58:034][157]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.47.58:037][157]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.47.58
+[2017.06.18-19.47.58:038][157]LogWorld: Bringing up level for play took: 0.001733
+[2017.06.18-19.47.58:038][157]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.47.58:039][157]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.47.58:039][157]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.47.58:039][157]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.47.58:049][157]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.47.58:051][157]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.171
+[2017.06.18-19.47.58:052][157]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.48.08:314][730]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.48.08:347][730]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.52.35:125][599]LogHotReload: New module detected: UE4Editor-UITest-635.dll
+[2017.06.18-19.52.35:808][602]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.52.35:892][602]LogClass: Could not find existing class CustomNoticeUserWidget in package /Script/UITest for HotReload, assuming new class
+[2017.06.18-19.52.35:907][602]LogHotReload: Re-instancing CustomNoticeUserWidget after hot-reload.
+[2017.06.18-19.52.36:477][602]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0012 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.52.36:479][602]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.52.36:751][602]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.52.36:756][602]Display: HotReload took  0.9s.
+[2017.06.18-19.54.00:275][881]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.54.02:343][909]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.54.02:366][909]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.02:366][909]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.54.02:367][909]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:54:02)
+[2017.06.18-19.54.02:367][909]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.54.02:368][909]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000829s)
+[2017.06.18-19.54.02:368][909]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.54.02:368][909]LogPlayLevel: PIE: World Init took: (0.000649s)
+[2017.06.18-19.54.02:368][909]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001637s)
+[2017.06.18-19.54.02:421][909]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.54.02:463][909]LogInit: FAudioDevice initialized.
+[2017.06.18-19.54.02:511][909]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.54.02:513][909]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.54.02
+[2017.06.18-19.54.02:514][909]LogWorld: Bringing up level for play took: 0.001153
+[2017.06.18-19.54.02:514][909]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.54.02:514][909]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.54.02:514][909]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.54.02:514][909]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.54.02:526][909]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.54.02:531][909]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: 0.308
+[2017.06.18-19.54.02:531][909]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.14:027][275]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.14:057][275]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.22:194][532]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.54.24:831][555]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.54.24:856][555]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.24:856][555]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.54.24:856][555]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:54:24)
+[2017.06.18-19.54.24:856][555]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.54.24:857][555]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000734s)
+[2017.06.18-19.54.24:857][555]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.54.24:857][555]LogPlayLevel: PIE: World Init took: (0.000519s)
+[2017.06.18-19.54.24:858][555]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001415s)
+[2017.06.18-19.54.24:912][555]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.54.24:971][555]LogInit: FAudioDevice initialized.
+[2017.06.18-19.54.25:044][555]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.54.25:048][555]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.54.25
+[2017.06.18-19.54.25:048][555]LogWorld: Bringing up level for play took: 0.001741
+[2017.06.18-19.54.25:049][555]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.54.25:049][555]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.54.25:050][555]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.54.25:050][555]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.54.25:065][555]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.54.25:070][555]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: 0.848
+[2017.06.18-19.54.25:071][555]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.42:262][487]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.54.42:291][487]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.12:410][168]LogHotReload: New module detected: UE4Editor-UITest-3945.dll
+[2017.06.18-19.55.12:808][173]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.18-19.55.12:923][173]LogContentBrowser: Native class hierarchy updated for 'UITest' in 0.0013 seconds. Added 10 classes and 2 folders.
+[2017.06.18-19.55.12:926][173]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.18-19.55.13:191][173]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 2257 classes and 459 folders.
+[2017.06.18-19.55.13:197][173]Display: HotReload took  0.4s.
+[2017.06.18-19.55.41:376][331]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.55.45:934][391]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.55.45:957][391]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.45:957][391]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.55.45:957][391]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:55:45)
+[2017.06.18-19.55.45:957][391]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.55.45:958][391]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000765s)
+[2017.06.18-19.55.45:958][391]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.55.45:958][391]LogPlayLevel: PIE: World Init took: (0.000508s)
+[2017.06.18-19.55.45:958][391]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001433s)
+[2017.06.18-19.55.46:024][391]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.55.46:066][391]LogInit: FAudioDevice initialized.
+[2017.06.18-19.55.46:117][391]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.55.46:120][391]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.55.46
+[2017.06.18-19.55.46:120][391]LogWorld: Bringing up level for play took: 0.001521
+[2017.06.18-19.55.46:121][391]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.55.46:121][391]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.55.46:121][391]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.55.46:121][391]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.55.46:135][391]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.55.46:138][391]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.085
+[2017.06.18-19.55.46:138][391]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.52:547][621]LogClass: SlateHandleClicked
+[2017.06.18-19.55.52:547][621]LogClass: Clicked
+[2017.06.18-19.55.54:864][759]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.54:892][759]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.58:568][799]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.55.58:591][799]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.55.58:591][799]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.55.58:591][799]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:55:58)
+[2017.06.18-19.55.58:591][799]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.55.58:592][799]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000763s)
+[2017.06.18-19.55.58:592][799]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.55.58:592][799]LogPlayLevel: PIE: World Init took: (0.000509s)
+[2017.06.18-19.55.58:592][799]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001428s)
+[2017.06.18-19.55.58:644][799]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.55.58:696][799]LogInit: FAudioDevice initialized.
+[2017.06.18-19.55.58:764][799]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.55.58:766][799]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.55.58
+[2017.06.18-19.55.58:766][799]LogWorld: Bringing up level for play took: 0.001060
+[2017.06.18-19.55.58:767][799]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.55.58:767][799]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.55.58:767][799]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.55.58:767][799]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.55.58:775][799]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.55.58:778][799]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: 0.555
+[2017.06.18-19.55.58:778][799]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.56.02:138][801]LogClass: SlateHandleClicked
+[2017.06.18-19.56.02:138][801]LogClass: Clicked
+[2017.06.18-19.56.30:115][477]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.56.30:143][477]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.57.18:707][613]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.028
+[2017.06.18-19.57.18:708][613]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.18-19.57.18:708][613]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.18-19.57.18:708][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-19.57.18:768][613]LogSavePackage: Save=49.73ms
+[2017.06.18-19.57.18:768][613]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto592736F114A65F14DE5E25A8D45BE5B5F.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset'
+[2017.06.18-19.57.18:769][613]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto5.uasset
+[2017.06.18-19.57.18:769][613]LogFileHelpers: Auto-saving content packages took 0.062
+[2017.06.18-19.57.44:997][880]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.57.53:114][979]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.57.53:137][979]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.57.53:137][979]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.57.53:137][979]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:57:53)
+[2017.06.18-19.57.53:137][979]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.57.53:138][979]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000749s)
+[2017.06.18-19.57.53:138][979]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.57.53:139][979]LogPlayLevel: PIE: World Init took: (0.000555s)
+[2017.06.18-19.57.53:139][979]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.001458s)
+[2017.06.18-19.57.53:190][979]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.57.53:233][979]LogInit: FAudioDevice initialized.
+[2017.06.18-19.57.53:281][979]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.57.53:283][979]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.57.53
+[2017.06.18-19.57.53:283][979]LogWorld: Bringing up level for play took: 0.000724
+[2017.06.18-19.57.53:283][979]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.57.53:283][979]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.57.53:283][979]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.57.53:283][979]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.57.53:290][979]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.57.53:293][979]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: 1.071
+[2017.06.18-19.57.53:294][979]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.00:370][137]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.00:398][137]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.08:796][323]BlueprintLog: New page: TestWidget 컴파일
+[2017.06.18-19.58.17:392][370]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.06.18-19.58.17:424][370]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.17:425][370]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-19.58.17:425][370]PIE: New page: PIE 세션: Minimal_Default (2017. 6. 19. 오후 1:58:17)
+[2017.06.18-19.58.17:425][370]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.06.18-19.58.17:426][370]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001114s)
+[2017.06.18-19.58.17:427][370]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.06.18-19.58.17:427][370]LogPlayLevel: PIE: World Init took: (0.000774s)
+[2017.06.18-19.58.17:427][370]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.002108s)
+[2017.06.18-19.58.17:508][370]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2017.06.18-19.58.17:611][370]LogInit: FAudioDevice initialized.
+[2017.06.18-19.58.17:710][370]LogLoad: Game class is 'UIGameMode'
+[2017.06.18-19.58.17:715][370]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2017.06.19-04.58.17
+[2017.06.18-19.58.17:716][370]LogWorld: Bringing up level for play took: 0.002167
+[2017.06.18-19.58.17:716][370]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.18-19.58.17:717][370]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.58.17:717][370]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.18-19.58.17:717][370]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.58.17:734][370]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.18-19.58.17:738][370]PIE: 정보 /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 에 대한 에디터에서 플레이 시작 시간: -0.484
+[2017.06.18-19.58.17:739][370]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.35:141][ 85]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-19.58.35:170][ 85]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.06.18-20.07.44:556][305]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.050
+[2017.06.18-20.07.44:558][305]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/TestWidget] ([1] browsable assets)...
+[2017.06.18-20.07.44:558][305]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/TestWidget]
+[2017.06.18-20.07.44:558][305]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-20.07.44:601][305]LogSavePackage: Save=35.50ms
+[2017.06.18-20.07.44:601][305]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidget_Auto6BFA9F36C4760A2EEB0350AB502508960.tmp' to 'F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset'
+[2017.06.18-20.07.44:601][305]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Saved/Autosaves/Game/StarterContent/TestWidget_Auto6.uasset
+[2017.06.18-20.07.44:601][305]LogFileHelpers: Auto-saving content packages took 0.044
+[2017.06.18-20.12.21:743][137]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/ButtonWidget" FILE="F:/Dev/UITest/Content/StarterContent/ButtonWidget.uasset" SILENT=true
+[2017.06.18-20.12.21:765][137]LogSavePackage: Save=11.91ms
+[2017.06.18-20.12.21:765][137]LogSavePackage: Moving 'F:/Dev/UITest/Saved/ButtonWidget6D12F6B9436377C7D36508929FA11346.tmp' to 'F:/Dev/UITest/Content/StarterContent/ButtonWidget.uasset'
+[2017.06.18-20.12.21:769][137]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Content/StarterContent/ButtonWidget.uasset
+[2017.06.18-20.12.21:773][137]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/TestWidget" FILE="F:/Dev/UITest/Content/StarterContent/TestWidget.uasset" SILENT=true
+[2017.06.18-20.12.21:817][137]LogSavePackage: Save=40.01ms
+[2017.06.18-20.12.21:817][137]LogSavePackage: Moving 'F:/Dev/UITest/Saved/TestWidgetAA97B8C244229D847A1EB29759002157.tmp' to 'F:/Dev/UITest/Content/StarterContent/TestWidget.uasset'
+[2017.06.18-20.12.21:821][137]LogSavePackage:Display: Finished SavePackage F:/Dev/UITest/Content/StarterContent/TestWidget.uasset
+[2017.06.18-20.12.21:953][137]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.06.18-20.12.22:172][138]Cmd: QUIT_EDITOR
+[2017.06.18-20.12.22:397][138]LogExit: Preparing to exit.
+[2017.06.18-20.12.23:021][138]LogExit: Editor shut down
+[2017.06.18-20.12.23:022][138]LogExit: Transaction tracking system shut down
+[2017.06.18-20.12.23:146][138]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.18-20.12.23:146][138]LogExit: Object subsystem successfully closed.
+[2017.06.18-20.12.23:155][138]LogD3D11RHI: Shutdown
+[2017.06.18-20.12.23:155][138]LogD3D11RHI: CleanupD3DDevice
+[2017.06.18-20.12.23:212][138]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module UITest (525)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (523)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module SequencerWidgets (506)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
+[2017.06.18-20.12.23:224][138]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.06.18-20.12.23:224][138]LogDirectoryWatcher: A directory notification for 'D:/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.06.18-20.12.23:225][138]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.06.18-20.12.23:225][138]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.06.18-20.12.23:225][138]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.06.18-20.12.23:225][138]LogDirectoryWatcher: A directory notification for 'F:/Dev/UITest/Content/Collections/' was aborted.
+[2017.06.18-20.12.23:225][138]LogDirectoryWatcher: A directory notification for 'F:/Dev/UITest/Content/Developers/wonhs/Collections/' was aborted.
+[2017.06.18-20.12.23:225][138]LogDirectoryWatcher: A directory notification for 'F:/Dev/UITest/Saved/Collections/' was aborted.
+[2017.06.18-20.12.23:225][138]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
+[2017.06.18-20.12.23:225][138]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module BspMode (472)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module Media (445)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module SessionServices (432)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
+[2017.06.18-20.12.23:226][138]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module MergeActors (402)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module SizeMap (400)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module TreeMap (398)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module XmlParser (382)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module Blutility (380)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
+[2017.06.18-20.12.23:544][138]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
+[2017.06.18-20.12.23:545][138]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module AutomationController (360)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module Layers (356)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module Persona (348)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
+[2017.06.18-20.12.23:598][138]LogModuleManager: Shutting down and abandoning module Kismet (344)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module Toolbox (338)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module OutputLog (332)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module GammaUI (330)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module Documentation (328)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module Niagara (326)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module PortalServices (320)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
+[2017.06.18-20.12.23:609][138]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SteamVR (302)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module OculusInput (294)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module CableComponent (288)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module SourceControl (247)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
+[2017.06.18-20.12.23:735][138]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
+[2017.06.18-20.12.23:736][138]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
+[2017.06.18-20.12.23:736][138]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
+[2017.06.18-20.12.23:736][138]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
+[2017.06.18-20.12.23:736][138]LogModuleManager: Shutting down and abandoning module MainFrame (232)
+[2017.06.18-20.12.23:736][138]LogModuleManager: Shutting down and abandoning module HotReload (231)
+[2017.06.18-20.12.23:736][138]LogDirectoryWatcher: A directory notification for 'F:/Dev/UITest/Binaries/Win64' was aborted.
+[2017.06.18-20.12.23:737][138]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
+[2017.06.18-20.12.23:738][138]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.06.18-20.12.23:738][138]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.06.18-20.12.23:738][138]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.06.18-20.12.23:738][138]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.06.18-20.12.23:839][138]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.06.18-20.12.23:939][138]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.06.18-20.12.23:940][138]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.06.18-20.12.23:941][138]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.06.18-20.12.23:941][138]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.06.18-20.12.23:941][138]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.06.18-20.12.23:942][138]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.06.18-20.12.23:942][138]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.06.18-20.12.23:942][138]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.06.18-20.12.24:122][138]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.06.18-20.12.24:122][138]LogDirectoryWatcher: A directory notification for 'F:/Dev/UITest/Content/' was aborted.
+[2017.06.18-20.12.24:122][138]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.06.18-20.12.24:123][138]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.06.18-20.12.24:130][138]LogDerivedDataCache: Shutdown
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.06.18-20.12.24:130][138]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.06.18-20.12.24:136][138]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.06.18-20.12.24:137][138]LogOnline:Display: Unloading online subsystem: NULL
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.06.18-20.12.24:137][138]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.06.18-20.12.24:137][138]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.06.18-20.12.24:137][138]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9059A944-4EC6-0173-C5C4-41BEA6409F61%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=8939c26e4bba249a7ef1b3a11c52a108%7C67edd315c19d42acafd85c97de64c8cf%7C4940ae7b-94f5-4679-ac18-1db815a66760&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.06.18-20.12.24:162][138]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.06.18-20.12.24:163][138]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.06.18-20.12.24:163][138]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.06.18-20.12.24:164][138]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.06.18-20.12.24:164][138]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.06.18-20.12.24:164][138]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.06.18-20.12.24:166][138]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.06.18-20.12.24:168][138]LogExit: Exiting.
+[2017.06.18-20.12.24:170][138]Log file closed, 06/19/17 05:12:24
