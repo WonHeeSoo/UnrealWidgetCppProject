@@ -17,12 +17,20 @@ class UITEST_API AUIGameMode : public AGameMode
 public:
 	UFUNCTION(BlueprintCallable, Category = "UMG System")
 		void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
+
+	UFUNCTION(BlueprintCallable, Category = "UMG System")
+		void ScreenNotice1Widget();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG System")
 		TSubclassOf<UUserWidget> MainMenuWidgetClass;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG System")
+		TSubclassOf<UUserWidget> Notice1WidgetClass;
+
 	UPROPERTY()
-		UUserWidget * CurrentWidget;
+		UUserWidget *CurrentWidget;
+	UPROPERTY()
+		UUserWidget *Notice1Widget;
 
 	AUIGameMode();
 
